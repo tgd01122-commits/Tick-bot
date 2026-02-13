@@ -1,0 +1,15 @@
+name: Melon Bot
+on:
+  schedule:
+    - cron: '*/5 * * * *' # 5분마다 실행
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '공연ID'
+          schedule-id: '회차ID'
+          seat-id: '좌석ID'
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
