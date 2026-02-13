@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: mooyoul/melon-ticket-actions@v1.1.0
         with:
-          product-id: '공연ID'
-          schedule-id: '회차ID'
-          seat-id: '좌석ID'
+          product-id: '212757'
+          schedule-id: '1003'
+          seat-id: '0'
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
