@@ -10,6 +10,6 @@ jobs:
       - uses: mooyoul/melon-ticket-actions@v1.1.0
         with:
           product-id: '212757'
-          schedule-id: '1003'
+          schedule-id: '1001'
           seat-id: '0'
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
